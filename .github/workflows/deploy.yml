@@ -22,15 +22,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-      - run: npm ci
-      - name: Build
-        run: BASE_PATH=/${{ github.event.repository.name }}/ npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          # A página é servida diretamente, sem etapa de build ou dependências.
+          path: |
+            index.html
+            script.js
+            src/styles.css
+            assets
       - id: deployment
         uses: actions/deploy-pages@v4
