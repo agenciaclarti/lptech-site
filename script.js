@@ -1,22 +1,14 @@
 /* Configuração simples: informe apenas os dígitos, incluindo DDI, para ativar o WhatsApp. */
-const WHATSAPP_NUMBER = '';
+const WHATSAPP_NUMBER = '5581985187208';
 const WHATSAPP_MESSAGE = 'Olá! Quero conhecer as soluções da LP Tech para o meu estabelecimento.';
 
 const contactButtons = document.querySelectorAll('[data-contact]');
-const notice = document.querySelector('[data-notice]');
-const noticeText = document.querySelector('[data-notice-text]');
 const menuToggle = document.querySelector('[data-menu-toggle]');
 const navigation = document.querySelector('[data-navigation]');
 const header = document.querySelector('[data-header]');
-const railLinks = document.querySelectorAll('[data-rail-link]');
-let noticeTimer;
-
-function showNotice(message) {
-  noticeText.textContent = message;
-  notice.hidden = false;
-  clearTimeout(noticeTimer);
-  noticeTimer = setTimeout(() => { notice.hidden = true; }, 4500);
-}
+const contactStatus = document.querySelector('[data-contact-status]');
+const whatsappNumber = WHATSAPP_NUMBER.replace(/\D/g, '');
+if (whatsappNumber && contactStatus) contactStatus.textContent = 'Atendimento comercial via WhatsApp';
 
 function closeMenu() {
   navigation.classList.remove('nav-links--open');
@@ -27,16 +19,13 @@ function closeMenu() {
 
 contactButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    const number = WHATSAPP_NUMBER.replace(/\D/g, '');
-    if (number) {
-      window.open(`https://wa.me/${number}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`, '_blank', 'noopener');
+    if (whatsappNumber) {
+      window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`, '_blank', 'noopener');
       return;
     }
-    showNotice('O contato via WhatsApp será disponibilizado em breve.');
   });
 });
 
-document.querySelector('[data-notice-close]').addEventListener('click', () => { notice.hidden = true; });
 menuToggle.addEventListener('click', () => {
   const open = navigation.classList.toggle('nav-links--open');
   document.body.classList.toggle('menu-is-open', open);
@@ -65,17 +54,4 @@ if (motionQuery.matches || !('IntersectionObserver' in window)) {
     });
   }, { threshold: 0.12 });
   revealItems.forEach((item) => observer.observe(item));
-}
-
-if ('IntersectionObserver' in window && railLinks.length) {
-  const sections = [...railLinks].map((link) => document.querySelector(link.getAttribute('href')));
-  const railObserver = new IntersectionObserver((entries) => {
-    const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-    if (!visible) return;
-    railLinks.forEach((link) => {
-      if (link.getAttribute('href') === `#${visible.target.id}`) link.setAttribute('aria-current', 'page');
-      else link.removeAttribute('aria-current');
-    });
-  }, { threshold: 0.35 });
-  sections.filter(Boolean).forEach((section) => railObserver.observe(section));
 }
