@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "company": {
+    "name": "Cremousse",
+    "mark": "CM",
+    "slogan": "Doces feitos para celebrar pausas especiais.",
+    "description": "Catálogo visual demonstrativo para uma marca de doces e sobremesas. Imagens, produtos e canais de venda devem ser substituídos pelos dados oficiais antes da publicação.",
+    "logo": "./assets/logo-demonstrativo.svg",
+    "cover": "./assets/placeholder-sobremesas.png",
+    "theme": {
+      "primary": "#a64662",
+      "secondary": "#f2c95f",
+      "background": "#fff8ef",
+      "surface": "#fffdf9",
+      "text": "#4a2730",
+      "muted": "#765a5c",
+      "font": "dmSans",
+      "radius": "pill",
+      "buttonStyle": "soft"
+    }
+  },
+  "contacts": {
+    "whatsapp": { "visible": false },
+    "website": { "visible": false },
+    "location": { "visible": false },
+    "hours": { "visible": false },
+    "google": { "visible": false },
+    "pix": { "visible": false }
+  },
+  "socials": {
+    "instagram": { "visible": false },
+    "facebook": { "visible": false },
+    "tiktok": { "visible": false }
+  },
+  "links": [
+    {
+      "title": "Cardápio digital em breve",
+      "description": "Destino demonstrativo — adicione a URL oficial para publicar",
+      "icon": "link",
+      "url": "https://example.com",
+      "visible": false,
+      "order": 10
+    }
+  ],
+  "share": {
+    "title": "Compartilhar catálogo",
+    "description": "Envie esta demonstração para alguém especial",
+    "visible": true,
+    "order": 90
+  },
+  "productsSection": {
+    "title": "Sabores demonstrativos",
+    "description": "Fotografias e produtos ilustrativos para mostrar como o catálogo pode valorizar uma confeitaria. Valores e disponibilidade ainda não foram cadastrados."
+  },
+  "products": [
+    {
+      "title": "Mousse de morango",
+      "description": "Sobremesa demonstrativa em camadas de creme, morangos e finalização delicada.",
+      "image": "./assets/placeholder-mousse-morango.png",
+      "visible": true,
+      "order": 10
+    },
+    {
+      "title": "Fatia de bolo especial",
+      "description": "Produto demonstrativo com creme, frutas e acabamento gourmet.",
+      "image": "./assets/placeholder-fatia-bolo.png",
+      "visible": true,
+      "order": 20
+    },
+    {
+      "title": "Caixa de bombons",
+      "description": "Seleção demonstrativa de doces para presentear ou compartilhar.",
+      "image": "./assets/placeholder-bombons.png",
+      "visible": true,
+      "order": 30
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Marca demonstrativa Cremousse</title>
+  <desc id="desc">Monograma CM em tons de rosa, creme e amarelo.</desc>
+  <rect width="240" height="240" rx="72" fill="#fff6ed"/>
+  <circle cx="120" cy="120" r="86" fill="#f8d4ca"/>
+  <path d="M54 103c19-39 42-48 66-48 29 0 50 15 66 48" fill="none" stroke="#d25a78" stroke-linecap="round" stroke-width="18"/>
+  <path d="M72 142c8 26 27 42 48 42s40-16 48-42" fill="none" stroke="#e6b84e" stroke-linecap="round" stroke-width="14"/>
+  <text x="120" y="136" fill="#8f314e" font-family="Georgia, serif" font-size="62" font-weight="700" text-anchor="middle">CM</text>
+</svg>

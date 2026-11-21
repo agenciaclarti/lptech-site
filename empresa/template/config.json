@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "company": {
+    "name": "Modelo de empresa",
+    "mark": "ME",
+    "slogan": "Substitua este slogan",
+    "description": "Este catálogo é um modelo. Preencha as informações reais antes de publicar.",
+    "theme": {
+      "primary": "#0d7e6b",
+      "secondary": "#9ee2d6",
+      "background": "#edf4f1",
+      "surface": "#ffffff",
+      "text": "#14201d",
+      "muted": "#52625c",
+      "font": "manrope",
+      "radius": "rounded",
+      "buttonStyle": "solid"
+    }
+  },
+  "contacts": {
+    "whatsapp": {
+      "title": "Fale conosco",
+      "description": "Ative apenas após informar o número real",
+      "number": "5500000000000",
+      "visible": false,
+      "order": 10
+    },
+    "website": { "title": "Visitar website", "url": "https://example.com", "visible": false, "order": 20 },
+    "location": { "label": "Cidade, UF", "url": "https://maps.google.com", "visible": false },
+    "hours": { "label": "Seg–Sex · 08h às 18h", "visible": false },
+    "google": { "rating": "4,9", "reviewCount": "+100 avaliações", "url": "https://example.com", "visible": false },
+    "pix": { "title": "Copiar chave Pix", "key": "chave-pix", "visible": false, "order": 30 }
+  },
+  "socials": {
+    "instagram": { "url": "https://instagram.com/suaempresa", "label": "Instagram", "visible": false },
+    "facebook": { "url": "https://facebook.com/suaempresa", "visible": false },
+    "tiktok": { "url": "https://tiktok.com/@suaempresa", "visible": false }
+  },
+  "links": [
+    { "title": "Link personalizado", "description": "Descrição opcional", "icon": "link", "url": "https://example.com", "visible": false, "order": 40 }
+  ],
+  "share": { "title": "Compartilhar catálogo", "visible": true, "order": 90 },
+  "productsSection": { "title": "Produtos e serviços", "description": "Conheça nossas soluções." },
+  "products": [
+    {
+      "title": "Nome do produto ou serviço",
+      "description": "Descrição comercial do item.",
+      "price": "Opcional",
+      "contact": { "type": "whatsapp", "title": "Solicitar orçamento", "visible": false },
+      "visible": false,
+      "order": 10
+    }
+  ]
+}

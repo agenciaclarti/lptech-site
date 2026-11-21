@@ -30,5 +30,6 @@ jobs:
             script.js
             src/styles.css
             assets
+            empresa
       - id: deployment
         uses: actions/deploy-pages@v4

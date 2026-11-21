@@ -1,0 +1,125 @@
+{
+  "version": 2,
+  "company": {
+    "name": "LP Tech",
+    "mark": "LP",
+    "slogan": "Tecnologia que aproxima.",
+    "description": "Soluções NFC e QR Code para modernizar a experiência em estabelecimentos do Agreste pernambucano.",
+    "logo": "../../assets/images/logo.png",
+    "cover": "../../assets/images/placas.png",
+    "theme": {
+      "primary": "#0d7e6b",
+      "secondary": "#75c8b9",
+      "background": "#efefed",
+      "surface": "#ffffff",
+      "text": "#141414",
+      "muted": "#585858",
+      "font": "inter",
+      "radius": "standard",
+      "buttonStyle": "solid"
+    }
+  },
+  "contacts": {
+    "whatsapp": {
+      "title": "Falar com a LP Tech",
+      "description": "Atendimento comercial pelo WhatsApp",
+      "number": "5581985187208",
+      "message": "Olá! Quero conhecer as soluções da LP Tech para o meu estabelecimento.",
+      "visible": true,
+      "order": 10
+    },
+    "website": {
+      "title": "Website oficial",
+      "description": "Conheça a LP Tech e nossas soluções",
+      "url": "../../",
+      "icon": "globe",
+      "visible": true,
+      "order": 20
+    },
+    "location": {
+      "label": "Riacho das Almas, PE",
+      "visible": true
+    },
+    "google": { "visible": false },
+    "pix": { "visible": false }
+  },
+  "socials": {
+    "instagram": { "visible": false },
+    "facebook": { "visible": false },
+    "tiktok": { "visible": false }
+  },
+  "links": [
+    {
+      "title": "Solicitar orçamento",
+      "description": "Conte o que seu estabelecimento precisa",
+      "icon": "whatsapp",
+      "url": "https://wa.me/5581985187208?text=Olá!%20Quero%20solicitar%20um%20orçamento%20da%20LP%20Tech.",
+      "visible": true,
+      "order": 30
+    }
+  ],
+  "share": {
+    "title": "Compartilhar catálogo",
+    "description": "Envie a LP Tech para quem precisa",
+    "visible": true,
+    "order": 40
+  },
+  "productsSection": {
+    "title": "Produtos e serviços",
+    "description": "Soluções físicas e digitais para aproximar seu negócio dos clientes."
+  },
+  "products": [
+    {
+      "title": "Placas NFC e QR Code",
+      "description": "Placas físicas para aproximar o smartphone ou escanear o QR Code e acessar o conteúdo certo.",
+      "image": "../../assets/images/placas.png",
+      "contact": { "type": "whatsapp", "title": "Solicitar orçamento", "visible": true },
+      "visible": true,
+      "order": 10
+    },
+    {
+      "title": "Displays NFC e QR Code",
+      "description": "Displays para balcões, recepções e ambientes comerciais com acesso prático a destinos digitais.",
+      "image": "../../assets/images/display.png",
+      "contact": { "type": "whatsapp", "title": "Solicitar orçamento", "visible": true },
+      "visible": true,
+      "order": 20
+    },
+    {
+      "title": "Placas de avaliação no Google",
+      "description": "Uma forma direta de levar seus clientes ao destino de avaliação escolhido pelo estabelecimento.",
+      "contact": { "type": "whatsapp", "title": "Solicitar orçamento", "visible": true },
+      "visible": true,
+      "order": 30
+    },
+    {
+      "title": "Placas para Instagram",
+      "description": "Placas configuradas para compartilhar o perfil e as redes sociais do seu negócio.",
+      "contact": { "type": "whatsapp", "title": "Solicitar orçamento", "visible": true },
+      "visible": true,
+      "order": 40
+    },
+    {
+      "title": "Soluções de pagamento Pix",
+      "description": "Destinos configurados para tornar o acesso a pagamentos mais simples no ponto de atendimento.",
+      "contact": { "type": "whatsapp", "title": "Solicitar orçamento", "visible": true },
+      "visible": true,
+      "order": 50
+    },
+    {
+      "title": "Catálogos digitais",
+      "description": "Páginas digitais para reunir links, informações e próximos passos do seu estabelecimento.",
+      "contact": { "type": "whatsapp", "title": "Solicitar orçamento", "visible": true },
+      "visible": true,
+      "order": 60
+    },
+    {
+      "title": "Crachás personalizados",
+      "description": "Crachás inteligentes para compartilhar informações, contatos e perfis profissionais com praticidade.",
+      "image": "../../assets/images/crachas.png",
+      "contact": { "type": "whatsapp", "title": "Solicitar orçamento", "visible": true },
+      "visible": true,
+      "order": 70
+    }
+  ]
+}
